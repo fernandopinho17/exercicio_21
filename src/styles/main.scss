@@ -1,3 +1,4 @@
+@use 'variaveis';
 
 *{
     margin: 0 auto;
@@ -7,12 +8,12 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: variaveis.$corDeFundo;
+    color: variaveis.$corSecundaria;
 }
 
 h1 {
-    color: red;
+    color:variaveis.$corPrimaria;
     position: relative;
     left: 30px;
     top: 18px;
@@ -23,16 +24,16 @@ h1 {
     list-style: none;
     font-family: 'Times New Roman', Times, serif;
     display: inline-flex;
-}
 
-.menu, li{
-    display: inline;
-    
+    li{
+        display: inline;
+        
+    }
 }
 
 .menu, li a {
     text-decoration: none;
-    color: white;
+    color: variaveis.$corSecundaria;
     padding: 10px;
     display: inline-block;
     position: relative;
@@ -40,7 +41,7 @@ h1 {
 }
 
 .menu, li a:hover {
-    color: red;
+    color:variaveis.$corPrimaria;
 }
 
 .container, img{
@@ -88,7 +89,7 @@ h1 {
     #cadastrar h5 {
         position: relative;
         bottom: 15px;
-        color: red;
+        color:variaveis.$corPrimaria;
     }
 
     .formulario {
@@ -111,7 +112,7 @@ h1 {
     }
 
     .form-control input {
-        border: 2px solid yellow;
+        border: 2px solid variaveis.$corInput;
         display: block;
         border-radius: 10px;
         font-size: 14px;
@@ -134,9 +135,9 @@ h1 {
     }
 
     .form button {
-        background-color: red;
-        border-radius: 2px solid red;
-        color: white;
+        background-color: variaveis.$corPrimaria;
+        border-radius: 2px solid variaveis.$corPrimaria;
+        color: variaveis.$corSecundaria;
         font-size: 14px;
         width: 20%;
         border-radius: 10px;
@@ -146,26 +147,24 @@ h1 {
     /* Error and Success */
 
     .form-control.success input {
-        border-color: #2ecc71;
+        border-color:variaveis.$corSuccess;
     }
 
     .form-control.error input {
-        border-color: #e74c3c;
+        border-color:variaveis.$corError;
     }
 
     .form-control.success i.fa-check-circle {
-        color: #2ecc71;
+        color:variaveis.$corSuccess;
         visibility: visible;
     }
 
     .form-control.error i.fa-exclamation-circle {
-        color: #e74c3c;
+        color:variaveis.$corError;
         visibility: visible;
     }
 
     .form-control.error small {
         visibility: visible;
-        color: #e74c3c;
+        color:variaveis.$corError;
     }
-
-
