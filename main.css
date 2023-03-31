@@ -1,0 +1,171 @@
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family:'Roboto',sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: red;
+    position: relative;
+    left: 30px;
+    top: 18px;
+}
+
+.menu {
+    padding: 0;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-flex;
+}
+
+.menu, li{
+    display: inline;
+    
+}
+
+.menu, li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    left: 47%;
+}
+
+.menu, li a:hover {
+    color: red;
+}
+
+.container, img{
+    width: 70%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.container{
+    display: inline-block;
+}
+
+    p {
+    font-style: italic;
+    position: relative;
+    left: 50%;
+    width: 20%;
+    bottom: 260px;
+}
+
+    #atores, h2 {
+        text-align: center;
+    }
+
+    #carousel-imagens {
+        width: 45%;
+    }
+
+    #filme, h4 {
+        text-align: center;
+    }
+
+    #filme {
+        position: relative;
+        top: 156px;
+    }
+
+    #cadastrar{
+        position: relative;
+        top: 290px;
+        padding: 20px;
+    }
+
+    #cadastrar h5 {
+        position: relative;
+        bottom: 15px;
+        color: red;
+    }
+
+    .formulario {
+        border-radius: 10px;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    .form-control {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    .form-control label {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .form-control input {
+        border: 2px solid yellow;
+        display: block;
+        border-radius: 10px;
+        font-size: 14px;
+        width: 60%;
+        padding: 10px;
+    }
+
+    .form-control i {
+        position: absolute;
+        top: 45px;
+        right: 10px;
+        visibility: hidden;
+    }
+
+    .form-control small {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+
+    .form button {
+        background-color: red;
+        border-radius: 2px solid red;
+        color: white;
+        font-size: 14px;
+        width: 20%;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    /* Error and Success */
+
+    .form-control.success input {
+        border-color: #2ecc71;
+    }
+
+    .form-control.error input {
+        border-color: #e74c3c;
+    }
+
+    .form-control.success i.fa-check-circle {
+        color: #2ecc71;
+        visibility: visible;
+    }
+
+    .form-control.error i.fa-exclamation-circle {
+        color: #e74c3c;
+        visibility: visible;
+    }
+
+    .form-control.error small {
+        visibility: visible;
+        color: #e74c3c;
+    }
+
+
